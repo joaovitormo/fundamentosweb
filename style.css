@@ -1,0 +1,147 @@
+* {
+    font-family:sans-serif;
+    padding: 0px;
+    margin:0px;
+    
+}
+body{
+    background-color:#f3f3f3;
+}
+
+header {
+    background-color: #51785f;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+header span{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+header span h2{
+    padding: 10px;
+
+}
+
+span ul li a, span ul li{
+    
+    text-decoration: none;
+    color:#fff;
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+span ul li a:before{
+    content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  color:#154231;
+  background-color:#154231;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+span ul li a:hover:before  {
+    color:#154231;
+    text-decoration: underline;
+    transition: 0.5s;
+    visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+span ul li a:hover {
+    transition: 0.5s;
+    color:#154231;
+}
+
+section {
+    margin: 3% 9%;
+    background-color: #fff;
+    padding: 35px;
+    border: 2px solid #d1d1d1;
+    height:100%;
+}
+
+section h2,p{
+    padding: 15px 0;
+}
+
+img {
+    width:80%;
+    height:80%;
+}
+
+footer {
+    background-color:#28362d;
+    color:#fdfbc7;
+    display:flex;
+    justify-content:space-around;
+    padding: 3rem;
+}
+
+
+
+
+form input, button{
+    font-size:18px;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf; 
+    padding:0.5rem;
+    width: 310px;
+}
+
+form button{
+    border: 1px solid #024722; 
+    cursor: pointer;
+    color:#024722;
+    background-color:#fff;
+    width: 330px;
+}
+
+form button:hover{
+    border: 1px solid #024722; 
+    cursor: pointer;
+    color:#fff;
+    background-color:#024722;
+    transition: 0.7s
+}
+
+
+form textarea {
+    font-size:18px;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf; 
+    padding:0.5rem;
+    width: 310px; height: 150px
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+@media (min-width:900px) {
+    #contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#map {
+    width:550px;
+}
+}
