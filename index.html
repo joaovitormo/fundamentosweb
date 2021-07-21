@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.3-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.3-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.3-web/css/solid.css" rel="stylesheet">
     <title>Hello World</title>
 </head>
+
 <body>
     <header>
         <span>
             <h2><i><b>Hello World </b></i>🌎</h2>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio<i class="far fa-home-lg-alt"></i></a></li>
                 <li><a href="videos.html">Vídeos</a></li>
                 <li><a href="fotos.html">Fotos</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li><a onclick="modalLogin()" style="cursor: pointer;">Entrar</a></li>
+
             </ul>
         </span>
     </header>
-    <hr>
-    <section>
-        <h2>Olá</h2>
-        <p>ipsum dolor sit amet consectetur adipisicing elit. 
-        Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa similique incidunt aut, iste delectus quisquam perspiciatis.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa similique incidunt aut, iste delectus quisquam perspiciatis.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa similique incidunt aut, iste delectus quisquam perspiciatis.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa similique incidunt aut, iste delectus quisquam perspiciatis.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa similique incidunt aut, iste delectus quisquam perspiciatis.
-    </p>
-<h3>E mais</h3>
-<p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum asperiores, earum eveniet praesentium, incidunt error veritatis impedit consequatur porro assumenda cumque ratione? Voluptate obcaecati porro quod, magni provident necessitatibus error architecto, doloremque mollitia temporibus laudantium repudiandae possimus id placeat saepe amet explicabo sit deserunt animi excepturi eos dolor? Vero non et architecto. Dolor recusandae fugiat enim unde iste praesentium, dolorum modi, deleniti nisi similique voluptatibus eos ipsum aspernatur beatae necessitatibus harum ullam molestiae hic est error aliquid tempore. Odit architecto, dolore quis quia ratione nobis excepturi nemo aspernatur, iusto dolor fugiat. Quos dolor facere unde magnam quod tempore, necessitatibus eaque nobis praesentium voluptates corrupti obcaecati cupiditate suscipit perspiciatis, laboriosam nemo eligendi incidunt labore rerum? Beatae accusamus sit ipsum nihil similique unde ad quidem placeat perferendis id illum sint, cupiditate debitis a rerum doloribus. Dolorem voluptatem, excepturi quod sint magnam debitis, consequuntur, porro sequi officiis voluptatum laudantium soluta illum aspernatur quas harum minus. Esse maiores nihil magni blanditiis, et cum similique? Iste alias, impedit, at, labore quis eaque minus perspiciatis necessitatibus eius ratione quaerat consequuntur. Quia reprehenderit asperiores ea facilis necessitatibus sunt, nemo illo voluptates modi ad? Temporibus nam molestiae magnam delectus ab doloribus iure? Pariatur incidunt, itaque laborum blanditiis fugiat vitae dolores ut, neque explicabo accusantium similique earum architecto perferendis aperiam quia? Laborum molestiae, similique quia, quibusdam explicabo dolor quidem sequi modi exercitationem placeat aliquam? Ea quaerat magnam nobis optio.
-</p>
 
-    <img src="assets/web.png" alt="html">
-    <figcaption><i>HTML, CSS e JS</i></figcaption>
-</section>
-<hr>
-<footer>
-    <h4>Todos direitos reservados!</h4>
-</footer>
-    
+    <div class="login" id="login">
+        <div class="login-content">
+            <button onclick="fechaLogin()">X</button>
+
+        </div>
+
+    </div>
+    <section>
+
+        <h2>Olá 👋</h2>
+        <p>ipsum dolor sit amet consectetur adipisicing elit.
+            Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa
+            similique incidunt aut, iste delectus quisquam perspiciatis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa
+            similique incidunt aut, iste delectus quisquam perspiciatis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa
+            similique incidunt aut, iste delectus quisquam perspiciatis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa
+            similique incidunt aut, iste delectus quisquam perspiciatis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Pariatur rerum nulla nemo, minima provident adipisci facere consequatur quod quasi beatae esse, qui culpa
+            similique incidunt aut, iste delectus quisquam perspiciatis.
+        </p>
+        <h3>E mais 🎉</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum asperiores, earum eveniet praesentium,
+            incidunt error veritatis impedit consequatur porro assumenda cumque ratione? Voluptate obcaecati porro quod,
+            magni provident necessitatibus error architecto, doloremque mollitia temporibus laudantium repudiandae
+            possimus id placeat saepe amet explicabo sit deserunt animi excepturi eos dolor? Vero non et architecto.
+            Dolor recusandae fugiat enim unde iste praesentium, dolorum modi, deleniti nisi similique voluptatibus eos
+            ipsum aspernatur beatae necessitatibus harum ullam molestiae hic est error aliquid tempore. Odit architecto,
+            dolore quis quia ratione nobis excepturi nemo aspernatur, iusto dolor fugiat. Quos dolor facere unde magnam
+            quod tempore, necessitatibus eaque nobis praesentium voluptates corrupti obcaecati cupiditate suscipit
+            perspiciatis, laboriosam nemo eligendi incidunt labore rerum? Beatae accusamus sit ipsum nihil similique
+            unde ad quidem placeat perferendis id illum sint, cupiditate debitis a rerum doloribus. Dolorem voluptatem,
+            excepturi quod sint magnam debitis, consequuntur, porro sequi officiis voluptatum laudantium soluta illum
+            aspernatur quas harum minus. Esse maiores nihil magni blanditiis, et cum similique? Iste alias, impedit, at,
+            labore quis eaque minus perspiciatis necessitatibus eius ratione quaerat consequuntur. Quia reprehenderit
+            asperiores ea facilis necessitatibus sunt, nemo illo voluptates modi ad? Temporibus nam molestiae magnam
+            delectus ab doloribus iure? Pariatur incidunt, itaque laborum blanditiis fugiat vitae dolores ut, neque
+            explicabo accusantium similique earum architecto perferendis aperiam quia? Laborum molestiae, similique
+            quia, quibusdam explicabo dolor quidem sequi modi exercitationem placeat aliquam? Ea quaerat magnam nobis
+            optio.
+        </p>
+
+        <img src="assets/web.png" alt="html">
+        <figcaption><i>HTML, CSS e JS</i></figcaption>
+    </section>
+    <hr>
+    <footer>
+        <h4>Todos direitos reservados!</h4>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
