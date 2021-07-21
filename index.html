@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,8 +35,25 @@
 
     <div class="login" id="login">
         <div class="login-content">
-            <button onclick="fechaLogin()">X</button>
+            <div id="entrar">
+                <h2>Faça seu login 🔒</h2>
+                <br>
+                <form>
+                    <input type="email" id="email" onkeyup="validaEmail()" placeholder="Email">
+                    <div id="txtEmail"></div>
+                    <br>
+                    <input type="password" id="senha" placeholder="Senha">
+                    <br>
+                    <p>Caso você não possua uma conta, <a href="#">clique aqui</a></p>
+                    <br>
+                    <button name="Enviar" value="Enviar" onclick="mensagem()">Enviar</button>
+                </form>
 
+            </div>
+            <div>
+                <button onclick="fechaLogin()" id="close">+</button>
+            </div>
+            
         </div>
 
     </div>
@@ -88,7 +105,7 @@
     <footer>
         <h4>Todos direitos reservados!</h4>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
